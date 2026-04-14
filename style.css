@@ -1,0 +1,186 @@
+:root {
+    --bg: #FFFFFF;
+    --text: #111111;
+    --accent: #7C8B6F; /* Sage */
+    --border: #E5E5E5;
+    --spacing: 4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+nav {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.hero {
+    padding: var(--spacing) 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    color: #666;
+}
+
+.hero-image {
+    margin-bottom: 3rem;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border);
+}
+
+.cta-section {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    border: 1px solid var(--border);
+    padding: 0.5rem;
+}
+
+input[type="email"] {
+    flex: 1;
+    border: none;
+    padding: 0.8rem 1rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+button {
+    background: var(--text);
+    color: var(--bg);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-family: inherit;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.hidden {
+    display: none;
+}
+
+#form-feedback {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--accent);
+}
+
+.features {
+    padding: var(--spacing) 0;
+    border-top: 1px solid var(--border);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.feature-item h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.feature-item p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.philosophy {
+    padding: calc(var(--spacing) * 2) 0;
+    background-color: #FAFAFA;
+}
+
+.philosophy-content {
+    max-width: 600px;
+}
+
+.label {
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    color: #999;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.philosophy p {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+footer {
+    padding: 2rem 0;
+    border-top: 1px solid var(--border);
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    color: #999;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    .feature-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .hero-image { margin-bottom: 2rem; }
+}
