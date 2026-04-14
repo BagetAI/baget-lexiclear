@@ -3,68 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LexiClear | Terms of Service. Finally in plain English.</title>
+    <title>LexiClear | Terms of Service, translated to human.</title>
+    <meta name="description" content="LexiClear is the privacy-first browser extension that simplifies legal jargon in Terms of Service into plain English.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700&family=Noto+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+JP:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <div class="container">
-            <span class="logo">LEXICLEAR</span>
+            <div class="nav-inner">
+                <span class="logo">LEXICLEAR</span>
+                <span class="tagline-small">Guardian of Digital Rights</span>
+            </div>
         </div>
     </nav>
 
     <header class="hero">
         <div class="container">
-            <h1>Terms of Service.<br>Finally in plain English.</h1>
-            <p class="subtitle">The privacy-first browser extension that translates legal jargon into human-readable insights. No logs. No cloud. Just your rights.</p>
-            <div class="hero-image">
-                <img src="images/minimalist-overhead-shot-of-a-sleek-lapt.png" alt="LexiClear Browser Extension UI">
-            </div>
-            <div class="cta-section">
+            <h1 class="hero-title">Terms of Service,<br>translated to human.</h1>
+            <p class="hero-subtitle">LexiClear is the privacy-first browser extension that transforms dense legal jargon into clear, actionable bullet points. No logs. No cloud. Local-first.</p>
+            
+            <div class="hero-cta">
                 <form id="waitlist-form">
-                    <input type="email" id="email" placeholder="Email address" required>
-                    <button type="submit">Early Access</button>
+                    <input type="email" id="email" placeholder="Enter your email" required aria-label="Email address">
+                    <button type="submit">Join the Waitlist</button>
                 </form>
-                <div id="form-feedback" class="hidden">Thank you. We will be in touch.</div>
+                <p id="form-feedback" class="hidden">Thank you. You are on the list for early access.</p>
+            </div>
+
+            <div class="hero-visual">
+                <img src="images/minimalist-product-interface-of-a-browse.png" alt="LexiClear browser extension simplifying a contract">
             </div>
         </div>
     </header>
 
-    <section class="features">
+    <section class="red-flag-hud">
         <div class="container">
-            <div class="feature-grid">
-                <div class="feature-item">
-                    <h3>Ghost AI</h3>
-                    <p>Background-native analysis. No manual uploads. No prompt fatigue. LexiClear detects legal pages and simplifies them instantly.</p>
+            <div class="section-label">01 / THE HUD</div>
+            <div class="hud-grid">
+                <div class="hud-item" data-risk="financial">
+                    <span class="hud-icon"></span>
+                    <h3>Financial Risk</h3>
+                    <p>Detects hidden fees, predatory auto-renewals, and complex cancellation loops before you subscribe.</p>
                 </div>
-                <div class="feature-item">
-                    <h3>Zero Cloud</h3>
-                    <p>Privacy is a human right. Our optimized LLMs run locally on your device. Your data never leaves your browser.</p>
+                <div class="hud-item" data-risk="privacy">
+                    <span class="hud-icon"></span>
+                    <h3>Privacy Risk</h3>
+                    <p>Flags data-selling, AI model training, and biometric tracking clauses hidden in paragraph 42.</p>
                 </div>
-                <div class="feature-item">
-                    <h3>Red Flag HUD</h3>
-                    <p>Instant categorization of clauses: Financial Risk, Privacy Risks, and Legal Rights. See what you're signing before you click.</p>
+                <div class="hud-item" data-risk="legal">
+                    <span class="hud-icon"></span>
+                    <h3>Legal Rights</h3>
+                    <p>Identifies mandatory arbitration, class action waivers, and jurisdictional traps in real-time.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="philosophy">
+    <section class="legal-vault">
         <div class="container">
-            <div class="philosophy-content">
-                <span class="label">PHILOSOPHY</span>
-                <h2>Clarity is Protection.</h2>
-                <p>We believe the internet shouldn't require a law degree to navigate. LexiClear was built for the 68 million non-native English speakers in the US and everyone tired of "Standard Terms" that waive fundamental rights.</p>
+            <div class="section-label">02 / LEGAL VAULT</div>
+            <h2>Live Simplifications</h2>
+            <p class="section-desc">Our database currently tracks major platforms. See how LexiClear decodes the fine print.</p>
+            
+            <div id="vault-display" class="vault-list">
+                <!-- Data populated via script.js -->
+                <div class="loading">Fetching latest legal data...</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ghost-ai">
+        <div class="container">
+            <div class="split-layout">
+                <div class="split-text">
+                    <div class="section-label">03 / GHOST AI</div>
+                    <h2>Unobtrusive. Vigilant. Private.</h2>
+                    <p>Unlike other tools, LexiClear doesn't require manual uploads. It runs as "Ghost AI" — a background process that auto-detects ToS pages and offers a single-click simplification ribbon.</p>
+                    <ul class="feature-list">
+                        <li>Local LLM: Processing stays on your hardware.</li>
+                        <li>Zero Training: We never use your data to train our models.</li>
+                        <li>No Prompting: It works where you browse, when you need it.</li>
+                    </ul>
+                </div>
+                <div class="split-image">
+                    <img src="images/minimalist-overhead-shot-of-a-sleek-lapt.png" alt="Laptop showing the LexiClear extension in use">
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 LexiClear. Built for digital sovereignty.</p>
+            <div class="footer-inner">
+                <div class="footer-left">
+                    <span class="logo">LEXICLEAR</span>
+                    <p>Terms of Service. Finally in plain English.</p>
+                </div>
+                <div class="footer-right">
+                    <p>&copy; 2026 LexiClear. All rights reserved.</p>
+                    <p>Built for the 68 million non-native speakers and the privacy-conscious.</p>
+                </div>
+            </div>
         </div>
     </footer>
 
