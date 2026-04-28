@@ -13,7 +13,7 @@ async function fetchVaultData() {
     const container = document.getElementById('vault-display');
     
     try {
-        const response = await fetch(`https://baget.ai/api/public/databases/${DB_ID}/rows`);
+        const response = await fetch(`https://app.baget.ai/api/public/databases/${DB_ID}/rows`);
         if (!response.ok) throw new Error('Failed to fetch vault data');
         
         const rows = await response.json();
